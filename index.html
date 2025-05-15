@@ -18,16 +18,16 @@
   <div class="x3f">
     <h1>Welcome to Scoobert DB</h1>
     <div>
-      <input type="text" placeholder="Username">
-      <input type="text" placeholder="Comment">
-      <button>Submit</button>
+      <input type="text" placeholder="Username", id="Username">
+      <input type="text" placeholder="Comment", id="Comment">
+      <button onclick="checkInputs()">Submit</button>
     </div>
     <table>
       <thead>
         <tr><th>User</th><th>Comment</th></tr>
       </thead>
       <tbody>
-        <tr><td>Tristain</td><td>Growcalth</td></tr>
+        <tr><td>Tristan</td><td>Growcalth</td></tr>
         <div class="z9y8x7">
             <span>f</span><span>l</span><span>a</span><span>g</span><p>{</p><span>
             <span>s</span><span>c</span><span>o</span><span>o</span><span>b</span><span>e</span><span>r</span><span>t</span>
@@ -40,5 +40,19 @@
     </table>
   </div>
   <!--flag(scoobert)-->
+  <script>
+    //real flag here trust
+    function checkInputs() {
+      const username = document.getElementById('Username').value.trim();
+      const comment = document.getElementById('Comment').value.trim();
+
+      if (username === "Tristan" && comment === "Growcalth") {
+        alert("Hint: Check inspect element! 🟢");
+      } else {
+        alert("Doesnt Exist ❌");
+      }
+    }
+  </script>
 </body>
 </html>
+
